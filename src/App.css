@@ -1,8 +1,60 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
 .App {
   text-align: center;
+  background-color: #182534;
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-logo {
+.Header{
+  height: 15%;
+  width: 100vw;
+  /* border: 1px solid red; */
+}
+.body-container{
+  margin: 8px;
+  background-color: #1B2A3B;
+  border-radius: 10px;
+  height: 84%;
+  width: 99%;
+  padding: 15px 5px;
+
+}
+.side-nav-container{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  width: 22%;
+  height: 100%;
+  /* border: 1px solid red; */
+  padding-left: 0;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.list-item{
+  width: 90%;
+  padding: 15px;
+  color: white;
+  font-weight: 700;
+  /* margin: auto; */
+  list-style: none;
+  background-color: #223449;
+  border-radius: 5px;
+  margin: 10px 0px;
+  
+}
+.list-item:hover{
+  background-color: #182533;
+}
+
+.side-nav-container::-webkit-scrollbar {
+  display: none;
+}
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +87,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
